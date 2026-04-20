@@ -1,82 +1,124 @@
-* { margin: 0; padding: 0; box-sizing: border-box; }
-
-body {
-    background-color: #0d1117;
-    color: #c9d1d9;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    display: flex;
-    justify-content: center;
-    padding: 40px 20px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.container { max-width: 600px; width: 100%; }
+body {
+  background-color: #0d1117;
+  color: #c9d1d9;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.container {
+  max-width: 600px;
+  width: 100%;
+}
 
 /* CABEÇALHO */
-header { margin-bottom: 40px; border-bottom: 1px solid #30363d; padding-bottom: 20px; }
-h1 { color: #f0f6fc; margin-bottom: 10px; }
-.subtitulo { color: #58a6ff; font-weight: bold; margin-bottom: 15px; }
-.contatos a { 
-    color: #c9d1d9; 
-    text-decoration: none; 
-    margin-right: 10px; 
-    font-size: 0.85rem; 
-    border: 1px solid #30363d; 
-    padding: 6px 12px; 
-    border-radius: 4px; 
+header {
+  margin-bottom: 40px;
+  border-bottom: 1px solid #30363d;
+  padding-bottom: 20px;
+}
+h1 {
+  color: #f0f6fc;
+  margin-bottom: 10px;
+}
+.subtitulo {
+  color: #58a6ff;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.contatos a {
+  color: #c9d1d9;
+  text-decoration: none;
+  margin-right: 10px;
+  font-size: 0.85rem;
+  border: 1px solid #30363d;
+  padding: 6px 12px;
+  border-radius: 4px;
 }
 
 /* LISTA DE PROJETOS */
-h2 { color: #f0f6fc; margin-bottom: 20px; font-size: 1.2rem; }
-.projeto { 
-    background: #161b22; 
-    border: 1px solid #30363d; 
-    padding: 20px; 
-    border-radius: 8px; 
-    margin-bottom: 20px; 
+h2 {
+  color: #f0f6fc;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
 }
-.projeto h3 { color: #58a6ff; margin-bottom: 8px; }
-.projeto p { font-size: 0.9rem; margin-bottom: 15px; line-height: 1.4; }
+.projeto {
+  background: #161b22;
+  border: 1px solid #30363d;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.projeto h3 {
+  color: #58a6ff;
+  margin-bottom: 8px;
+}
+.projeto p {
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
 
 /* LINKS UM EM CADA LINHA */
 .links-projeto a {
-    display: block; 
-    text-align: center;
-    padding: 10px;
-    margin-top: 8px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 6px;
-    font-size: 0.9rem;
+  display: block;
+  text-align: center;
+  padding: 10px;
+  margin-top: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  font-size: 0.9rem;
 }
 
-.btn { background-color: #238636; color: white; }
-.btn:hover { background-color: #2ea043; }
+.btn {
+  background-color: #238636;
+  color: white;
+}
+.btn:hover {
+  background-color: #2ea043;
+}
 
-.btn-repo { border: 1px solid #30363d; color: #58a6ff; }
-.btn-repo:hover { background-color: #30363d; color: #f0f6fc; }
+.btn-repo {
+  border: 1px solid #30363d;
+  color: #58a6ff;
+}
+.btn-repo:hover {
+  background-color: #30363d;
+  color: #f0f6fc;
+}
 
 /* RODAPÉ */
-footer { text-align: center; margin-top: 40px; font-size: 0.75rem; color: #8b949e; }
-
-
-
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.75rem;
+  color: #8b949e;
+}
 
 /* Estilo para o resumo de informações */
 .perfil-resumo {
-    text-align: left;           /* Alinha o texto à esquerda para facilitar a leitura */
-    background: #161b22;        /* Um fundo levemente diferente para destacar */
-    padding: 15px;
-    border-radius: 6px;
-    margin: 20px 0;
-    font-size: 0.9rem;
-    border-left: 4px solid #58a6ff; /* Uma barrinha azul de destaque */
+  text-align: left; /* Alinha o texto à esquerda para facilitar a leitura */
+  background: #161b22; /* Um fundo levemente diferente para destacar */
+  padding: 15px;
+  border-radius: 6px;
+  margin: 20px 0;
+  font-size: 0.9rem;
+  border-left: 4px solid #58a6ff; /* Uma barrinha azul de destaque */
 }
 
 .perfil-resumo p {
-    margin-bottom: 8px;
-    color: #c9d1d9;
+  margin-bottom: 8px;
+  color: #c9d1d9;
 }
 
 .perfil-resumo strong {
-    color: #f0f6fc;
+  color: #f0f6fc;
 }
