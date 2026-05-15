@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #0d1117;
+  background-color: #07101f;
   color: #c9d1d9;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
@@ -21,7 +21,7 @@ body {
 /* CABEÇALHO */
 header {
   margin-bottom: 40px;
-  border-bottom: 1px solid #30363d;
+  border-bottom: 1px solid #ec1544;
   padding-bottom: 20px;
 }
 h1 {
@@ -106,12 +106,12 @@ footer {
 /* Estilo para o resumo de informações */
 .perfil-resumo {
   text-align: left; /* Alinha o texto à esquerda para facilitar a leitura */
-  background: #161b22; /* Um fundo levemente diferente para destacar */
+  background: #323b47; /* Um fundo levemente diferente para destacar */
   padding: 15px;
   border-radius: 6px;
   margin: 20px 0;
   font-size: 0.9rem;
-  border-left: 4px solid #58a6ff; /* Uma barrinha azul de destaque */
+  border-left: 4px solid #d4b631; /* Uma barrinha azul de destaque */
 }
 
 .perfil-resumo p {
