@@ -9,13 +9,15 @@ body {
   color: #c9d1d9;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
-  justify-content: center;
-  padding: 40px 20px;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
 }
 
 .container {
   max-width: 600px;
   width: 100%;
+  padding: 40px 20px;
 }
 
 /* CABEÇALHO */
@@ -24,15 +26,18 @@ header {
   border-bottom: 1px solid #ec1544;
   padding-bottom: 20px;
 }
+
 h1 {
   color: #f0f6fc;
   margin-bottom: 10px;
 }
+
 .subtitulo {
   color: #58a6ff;
   font-weight: bold;
   margin-bottom: 15px;
 }
+
 .contatos a {
   color: #c9d1d9;
   text-decoration: none;
@@ -43,12 +48,32 @@ h1 {
   border-radius: 4px;
 }
 
-/* LISTA DE PROJETOS */
+.perfil-resumo {
+  text-align: left;
+  background: #323b47;
+  padding: 15px;
+  border-radius: 6px;
+  margin: 20px 0;
+  font-size: 0.9rem;
+  border-left: 4px solid #d4b631;
+}
+
+.perfil-resumo p {
+  margin-bottom: 8px;
+  color: #c9d1d9;
+}
+
+.perfil-resumo strong {
+  color: #f0f6fc;
+}
+
+/* PROJETOS */
 h2 {
   color: #f0f6fc;
   margin-bottom: 20px;
   font-size: 1.2rem;
 }
+
 .projeto {
   background: #161b22;
   border: 1px solid #30363d;
@@ -56,17 +81,18 @@ h2 {
   border-radius: 8px;
   margin-bottom: 20px;
 }
+
 .projeto h3 {
   color: #58a6ff;
   margin-bottom: 8px;
 }
+
 .projeto p {
   font-size: 0.9rem;
   margin-bottom: 15px;
   line-height: 1.4;
 }
 
-/* LINKS UM EM CADA LINHA */
 .links-projeto a {
   display: block;
   text-align: center;
@@ -82,6 +108,7 @@ h2 {
   background-color: #238636;
   color: white;
 }
+
 .btn:hover {
   background-color: #2ea043;
 }
@@ -90,40 +117,43 @@ h2 {
   border: 1px solid #30363d;
   color: #58a6ff;
 }
+
 .btn-repo:hover {
   background-color: #30363d;
   color: #f0f6fc;
 }
 
-/* RODAPÉ */
-footer {
-  text-align: center;
-  margin-top: 40px;
+
+.version-tag {
+  color: #27ae60;
+  border: 1px solid #27ae60;
+  padding: 2px 8px;
+  border-radius: 20px;
   font-size: 0.75rem;
-  color: #8b949e;
- 
+  font-weight: bold;
 }
 
-.footer-logo {
-  width: 80px;
-  margin-bottom: 10px;
-}
-/* Estilo para o resumo de informações */
-.perfil-resumo {
-  text-align: left; /* Alinha o texto à esquerda para facilitar a leitura */
-  background: #323b47; /* Um fundo levemente diferente para destacar */
-  padding: 15px;
-  border-radius: 6px;
-  margin: 20px 0;
+.github-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   font-size: 0.9rem;
-  border-left: 4px solid #d4b631; /* Uma barrinha azul de destaque */
+  color: #95a5a6;
+  text-decoration: none;
+  transition: 0.3s ease;
 }
 
-.perfil-resumo p {
-  margin-bottom: 8px;
-  color: #c9d1d9;
+.github-link:hover {
+  color: #27ae60;
+  transform: translateY(-2px);
 }
 
-.perfil-resumo strong {
-  color: #f0f6fc;
-}
+
+
+/* RODAPÉ */
+.main-footer { width: 100%; background: #1a1a1a; color: white; padding: 30px 10%; margin-top: auto; display: flex; justify-content: space-between; align-items: center; border-top: 5px solid #27ae60; flex-wrap: wrap; gap: 20px; }
+.footer-item { flex: 1; min-width: 150px; text-align: center; }
+.footer-logo { width: 80px; margin-bottom: 10px; }
+.version-tag { color: #27ae60; border: 1px solid #27ae60; padding: 2px 8px; border-radius: 20px; font-size: 0.75rem; font-weight: bold; }
+.github-link { display: inline-flex; align-items: center; gap: 8px; font-size: 0.9rem; color: #95a5a6; text-decoration: none; transition: 0.3s; }
+.github-link:hover { color: #27ae60; }
