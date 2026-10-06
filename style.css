@@ -5,22 +5,23 @@
 }
 
 body {
-  background-color: #07101f;
-  color: #c9d1d9;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #1f2d44;
+  color: #e6edf3;
+  font-family: "Segoe UI", Tahoma, sans-serif;
   display: flex;
   flex-direction: column;
-  align-items: center;
   min-height: 100vh;
 }
 
+/* CONTEÚDO CENTRALIZADO */
 .container {
   max-width: 600px;
   width: 100%;
+  margin: 0 auto;
   padding: 40px 20px;
+  text-align: center;
 }
 
-/* CABEÇALHO */
 header {
   margin-bottom: 40px;
   border-bottom: 1px solid #ec1544;
@@ -28,132 +29,124 @@ header {
 }
 
 h1 {
-  color: #f0f6fc;
+  color: #ffffff;
   margin-bottom: 10px;
 }
 
+h2 {
+  color: #ffffff;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
 .subtitulo {
-  color: #58a6ff;
+  color: #79b8ff;
   font-weight: bold;
   margin-bottom: 15px;
 }
 
-.contatos a {
-  color: #c9d1d9;
-  text-decoration: none;
-  margin-right: 10px;
-  font-size: 0.85rem;
-  border: 1px solid #30363d;
-  padding: 6px 12px;
-  border-radius: 4px;
-}
-
 .perfil-resumo {
-  text-align: left;
-  background: #323b47;
-  padding: 15px;
+  background: #2b3d5a;
+  border-left: 4px solid #d4b631;
   border-radius: 6px;
+  padding: 15px;
   margin: 20px 0;
   font-size: 0.9rem;
-  border-left: 4px solid #d4b631;
+  text-align: left;
 }
 
 .perfil-resumo p {
   margin-bottom: 8px;
-  color: #c9d1d9;
 }
 
-.perfil-resumo strong {
-  color: #f0f6fc;
+.contatos a {
+  display: inline-block;
+  color: #e6edf3;
+  text-decoration: none;
+  font-size: 0.85rem;
+  border: 1px solid #4a5f80;
+  border-radius: 4px;
+  padding: 6px 12px;
+  margin: 4px;
 }
 
-/* PROJETOS */
-h2 {
-  color: #f0f6fc;
-  margin-bottom: 20px;
-  font-size: 1.2rem;
-}
-
+/* CARTÕES */
 .projeto {
-  background: #161b22;
-  border: 1px solid #30363d;
-  padding: 20px;
+  background: #2b3d5a;
+  border: 1px solid #4a5f80;
   border-radius: 8px;
+  padding: 20px;
   margin-bottom: 20px;
 }
 
 .projeto h3 {
-  color: #58a6ff;
+  color: #79b8ff;
   margin-bottom: 8px;
 }
 
 .projeto p {
   font-size: 0.9rem;
-  margin-bottom: 15px;
   line-height: 1.4;
+  margin-bottom: 15px;
 }
 
 .links-projeto a {
   display: block;
-  text-align: center;
   padding: 10px;
   margin-top: 8px;
-  text-decoration: none;
-  font-weight: bold;
   border-radius: 6px;
   font-size: 0.9rem;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 .btn {
-  background-color: #238636;
-  color: white;
+  background: #238636;
+  color: #fff;
 }
 
 .btn:hover {
-  background-color: #2ea043;
+  background: #2ea043;
 }
 
 .btn-repo {
-  border: 1px solid #30363d;
-  color: #58a6ff;
+  border: 1px solid #4a5f80;
+  color: #79b8ff;
 }
 
 .btn-repo:hover {
-  background-color: #30363d;
-  color: #f0f6fc;
+  background: #4a5f80;
+  color: #fff;
 }
-
-
-.version-tag {
-  color: #27ae60;
-  border: 1px solid #27ae60;
-  padding: 2px 8px;
-  border-radius: 20px;
-  font-size: 0.75rem;
-  font-weight: bold;
-}
-
-.github-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 0.9rem;
-  color: #95a5a6;
-  text-decoration: none;
-  transition: 0.3s ease;
-}
-
-.github-link:hover {
-  color: #27ae60;
-  transform: translateY(-2px);
-}
-
-
 
 /* RODAPÉ */
-.main-footer { width: 100%; background: #1a1a1a; color: white; padding: 30px 10%; margin-top: auto; display: flex; justify-content: space-between; align-items: center; border-top: 5px solid #27ae60; flex-wrap: wrap; gap: 20px; }
-.footer-item { flex: 1; min-width: 150px; text-align: center; }
-.footer-logo { width: 80px; margin-bottom: 10px; }
-.version-tag { color: #27ae60; border: 1px solid #27ae60; padding: 2px 8px; border-radius: 20px; font-size: 0.75rem; font-weight: bold; }
-.github-link { display: inline-flex; align-items: center; gap: 8px; font-size: 0.9rem; color: #95a5a6; text-decoration: none; transition: 0.3s; }
-.github-link:hover { color: #27ae60; }
+.main-footer {
+  width: 100%;
+  margin-top: auto;
+  padding: 20px 5%;
+  background: #4a6a94;
+  color: #ffffff;
+  border-top: 3px solid #27ae60;
+  font-size: 0.85rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px 30px;
+  text-align: center;
+}
+
+/* CELULAR */
+@media (max-width: 480px) {
+  .container {
+    padding: 25px 15px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .main-footer {
+    flex-direction: column;
+  }
+}
